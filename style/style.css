@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(113, 121, 126);
 }
 header{
     width: 100%;
@@ -8,6 +9,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
     background-color: none;
+    background-color: rgb(113, 121, 126);
 }
 .header{
     max-width: 1500px;
@@ -34,14 +36,15 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 10px 0;
+    padding: 20px 0 0 0;
 }
 
 a{
     text-decoration: none;
     font-weight: bold;
-    color: red;
+    color: skyblue;
 }
+
 
 .majn{
     margin: 15px;
@@ -50,13 +53,44 @@ a{
 h1{
     display: flex;
     justify-content: center;
+    color: skyblue;
 }
 
 
-.info, .info1, .info2{
+.info{
     border: 2px solid black;
     margin: 5px;
     padding: 0 10px;
+}
+
+.states{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 0 10px;
+}
+.kartisky{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(0, 0, 0);
+    width: 130px;
+    height: 104px;
+    margin: 5px;
+    background-color: white;
+}
+.kartisky img{
+    width: 130px;
+    height: 68px;
+}
+.kartisky a{
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    padding: 8px 0 0 0;
+    border-top: solid 1px black;
+    color: black;
 }
 
 
