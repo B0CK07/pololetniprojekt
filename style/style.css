@@ -3,31 +3,32 @@ body {
     padding: 0;
     background-color: rgb(113, 121, 126);
 }
+
 header{
     width: 100%;
     height: 100px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    position: relative;
-    background-color: none;
-    background-color: rgb(113, 121, 126);
 }
+
 .header{
     max-width: 1500px;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100%;
 }
+
 .logo {
-    width: 150px;
+    width: 158px;
     height: 50px;
 }
+
 .logo img{
     width: 110%;
     height: 130%;
 }
+
 nav{
     display: flex;
     position: absolute;
@@ -45,31 +46,32 @@ a{
     color: skyblue;
 }
 
+header a{
+    text-shadow: 2px 2px 5px black
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
 .majn{
     margin: 15px;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    color: skyblue;
-}
-
-
-.info{
-    border: 2px solid black;
-    margin: 5px;
+#info{
+    margin: 0 20px;
     padding: 0 10px;
 }
 
-.states{
+#states{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-evenly;
     margin: 5px;
     padding: 0 10px;
+    gap: 30px;
 }
 .kartisky{
     display: flex;
@@ -84,16 +86,77 @@ h1{
     width: 130px;
     height: 68px;
 }
-.kartisky a{
+#odkaz{
     display: flex;
     justify-content: center;
     flex-direction: center;
     padding: 8px 0 0 0;
-    border-top: solid 1px black;
     color: black;
+    border-top: solid 1px black;
 }
 
+p, h3, h1{
+    color: skyblue;
+}
 
+h3, h1{
+    display: flex;
+    justify-content: center;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    color: skyblue;
+}
+
+#Leaks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+}
+
+#Leaks li{
+    color: skyblue;
+}
+
+#Leaks a, #info a{
+    text-decoration: underline;
+}
+
+footer{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.obrazky{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px; 
+    border-bottom: 1px solid skyblue;
+}
+
+.obrazky img{
+    max-width: 75%;
+    height: 75%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (min-width: 768px) {
-
+    .kartisky img:hover{
+        filter: blur(3px);
+    }
+    #info a:hover{
+        color: black;
+        text-decoration: none;
+    }
+    #Leaks a:hover{
+        color: black;
+        text-decoration: none;
+    }
 }
