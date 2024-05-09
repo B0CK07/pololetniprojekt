@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(113, 121, 126);
+    background-color: lightgray;
 }
 
 header{
@@ -43,7 +43,7 @@ nav{
 a{
     text-decoration: none;
     font-weight: bold;
-    color: skyblue;
+    color: black;
 }
 
 header a{
@@ -86,6 +86,29 @@ main{
     width: 130px;
     height: 68px;
 }
+.shells{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;    
+}
+.shells p{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+.AP{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.AP img{
+    width: 54px;
+    height: 54px;
+}
+
 #odkaz{
     display: flex;
     justify-content: center;
@@ -95,10 +118,6 @@ main{
     border-top: solid 1px black;
 }
 
-p, h3, h1{
-    color: skyblue;
-}
-
 h3, h1{
     display: flex;
     justify-content: center;
@@ -106,7 +125,7 @@ h3, h1{
 .list{
     display: flex;
     justify-content: center;
-    color: skyblue;
+    color: black;
 }
 
 #Leaks{
@@ -117,12 +136,17 @@ h3, h1{
     border: none;
 }
 
-#Leaks li{
-    color: skyblue;
-}
 
 #Leaks a, #info a{
     text-decoration: underline;
+}
+
+.zajimavosti_ostatni{
+    display: flex;
+    justify-content: center;
+}
+.zajimavosti_ostatni ul{
+    list-style-type: none;
 }
 
 footer{
@@ -135,18 +159,15 @@ footer{
     gap: 5px;
     padding-top: 10px;
     padding-bottom: 5px; 
-    border-bottom: 1px solid skyblue;
-}
-
-.obrazky img{
-    max-width: 75%;
-    height: 75%;
+    border-bottom: 1px solid black;
 }
 
 .copyright{
     display: flex;
     justify-content: center;
 }
+
+
 @media only screen and (min-width: 768px) {
     .kartisky img:hover{
         filter: blur(3px);
@@ -159,4 +180,10 @@ footer{
         color: black;
         text-decoration: none;
     }
+    #zajimavosti_list{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
 }
