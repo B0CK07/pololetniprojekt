@@ -141,14 +141,6 @@ h3, h1{
     text-decoration: underline;
 }
 
-.zajimavosti_ostatni{
-    display: flex;
-    justify-content: center;
-}
-.zajimavosti_ostatni ul{
-    list-style-type: none;
-}
-
 footer{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
