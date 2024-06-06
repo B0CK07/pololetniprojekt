@@ -7,7 +7,7 @@ body {
 header{
     width: 100%;
     height: 100px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
 }
 
 .header{
@@ -62,7 +62,6 @@ main{
 
 #info{
     margin: 0 20px;
-    padding: 0 10px;
 }
 
 #states{
@@ -73,7 +72,7 @@ main{
     padding: 0 10px;
     gap: 30px;
 }
-.kartisky{
+.karticky{
     display: flex;
     flex-direction: column;
     border: solid 1px rgb(0, 0, 0);
@@ -82,7 +81,7 @@ main{
     margin: 5px;
     background-color: white;
 }
-.kartisky img{
+.karticky img{
     width: 130px;
     height: 68px;
 }
@@ -93,20 +92,16 @@ main{
     flex-direction: column;
     margin: 15px;    
 }
-.shells p{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-}
+
 .AP{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 10px;
 }
-.AP img{
-    width: 54px;
-    height: 54px;
+.AP-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #odkaz{
@@ -136,13 +131,17 @@ h3, h1{
     border: none;
 }
 
-
 #Leaks a, #info a{
     text-decoration: underline;
 }
 
+#leak{
+    display: flex;
+    justify-content: center;
+}
+
 footer{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
 }
 
 .obrazky{
@@ -161,7 +160,7 @@ footer{
 
 
 @media only screen and (min-width: 768px) {
-    .kartisky img:hover{
+    .karticky img:hover{
         filter: blur(3px);
     }
     #info a:hover{
@@ -177,5 +176,8 @@ footer{
         justify-content: center;
         align-items: flex-start;
     }
-
+    .AP-img{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
